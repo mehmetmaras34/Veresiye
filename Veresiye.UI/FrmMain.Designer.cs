@@ -1,6 +1,6 @@
 ﻿namespace Veresiye.UI
 {
-    partial class Form1
+    partial class FrmMain
     {
         /// <summary>
         ///Gerekli tasarımcı değişkeni.
@@ -30,13 +30,15 @@
         {
             this.SuspendLayout();
             // 
-            // Form1
+            // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(801, 296);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(646, 266);
+            this.IsMdiContainer = true;
+            this.Name = "FrmMain";
+            this.Text = "Veresiye";
+            this.Load += new System.EventHandler(this.FrmMain_Load);
             this.ResumeLayout(false);
 
         }

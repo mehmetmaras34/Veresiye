@@ -12,6 +12,7 @@ namespace Veresiye.Model
         public string Amount { get; set; }
         public DateTime TransactionDate { get; set; }
         public ActivityType ActivityType { get; set; }
+
         public virtual Company Company { get; set; }
 
     }

@@ -9,11 +9,11 @@ namespace Veresiye.Model
    public class Activity:BaseEntity
     {
         public string Name { get; set; }
-        public string Amount { get; set; }
+        public decimal Amount { get; set; }
         public DateTime TransactionDate { get; set; }
         public ActivityType ActivityType { get; set; }
 
         public virtual Company Company { get; set; }
-
+        public int CompanyId { get; set; }
     }
 }

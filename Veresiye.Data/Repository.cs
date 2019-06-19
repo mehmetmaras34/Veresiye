@@ -48,15 +48,15 @@ namespace Veresiye.Data
         {
             entity.CreatedAt = DateTime.Now;
             entity.CreatedBy = "unknow";
-            entity.CreatedAt = DateTime.Now;
-            entity.CreatedBy = "unknow";
+            entity.UpdateAt = DateTime.Now;
+            entity.UpdateBy = "unknow";
             entities.Add(entity);
         }
 
         public void Update(T entity)
         {
-            entity.CreatedAt = DateTime.Now;
-            entity.CreatedBy = "unknow";
+            entity.UpdateAt = DateTime.Now;
+            entity.UpdateBy = "unknow";
             db.Entry<T>(entity).State=EntityState.Modified;
         }
     }
